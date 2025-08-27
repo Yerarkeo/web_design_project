@@ -620,137 +620,238 @@ footer {
 
 
 
-/* ----------- Tablet (max-width: 1024px) ----------- */
-@media (max-width: 1024px) {
-
-  nav {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .logo {
-    padding: 10px;
-  }
-
-  .logo img {
-    width: 35%;
-  }
-
-  .link-page ul {
-    flex-direction: row;
-    padding: 15px 0;
-    justify-content: center;
-  }
-
-  h1 {
-    font-size: 3em;
-    padding: 100px 0px 10px 50px;
-  }
-
-  .home p {
-    width: 80%;
-    padding-left: 50px;
-    font-size: 1.1em;
-  }
-
-  .values-section {
-    padding: 30px 0px 20px 50px;
-  }
-
-  .food-card {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .fcard {
-    width: 40%;
-    height: auto;
-  }
-
-  .sport-card {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .collage {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .aero-pic {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-
 /* ----------- Mobile Phone (max-width: 600px) ----------- */
 @media (max-width: 600px) {
 
-  nav {
+  /* nav {
     flex-direction: column;
     align-items: center;
-  }
+  } */
 
-  .logo img {
+.logo img {
     width: 50%;
   }
 
-  .link-page ul {
+.link-page ul {
     flex-direction: column;
     gap: 10px;
     padding: 10px 0;
     text-align: center;
   }
 
-  h1 {
+/* h1 {
     font-size: 2em;
     padding: 60px 0px 10px 20px;
-  }
+  } */
 
-  .home p {
+.home p {
     width: 90%;
     padding-left: 20px;
     font-size: 1em;
   }
 
-  .values-section {
-    padding: 20px;
-  }
-
-  .card1, .card2, .card3, .card4 {
+.top{
+    /* background: #a37d7d; */
+    display: flex;
     flex-direction: column;
-    width: 100%;
+}
+
+.h22{
+      flex: 1;
+    /* background: #6a5656; */
+    font-weight: bold;
+    font-size: 2.3em;
+    text-shadow: 1px 3px 6px rgb(12, 5, 102);
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 0px 0px;
+}
+.pp{
+     display: flex;
+    justify-content: center;
+    flex: 2;
+    padding: 30px 0px 20px 0px;
+    /* background: #c51d1d; */
+}
+ 
+
+
+
+.values-section {
+    padding: 20px;
+
   }
 
-  .food-card {
+.card1, .card2, .card3, .card4 {
+   display: flex;
+   flex-direction: row;
+    background-color: rgb(222, 241, 242);
+    border-radius: 10px;
+    padding: 10px;
+    width: 84%;
+    font-size: 1.5em;
+}
+.card1 i, h6, .card2 i ,h6, .card3 i, h6, .card4 i ,h6{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    
+}
+
+
+
+
+.food-card {
+    align-items: center;
+    padding: 6px 6px 0px 0px;
+    gap: 0px;
+    /* background: #816060; */
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+
+}
+.text-overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 60px 0px;
+    color: #000;
+}
+.fcard {
+    /* height: 0vh; */
+    width: 90%;
+    height: auto;  
+}
+
+.tablee {
+
+    background: linear-gradient(rgba(222, 113, 40, 0.5), rgba(244, 229, 219, 0.5));
+    display: flex;
+    justify-content: center;
+
+    padding: 0px 0px 0px 0px;
+}
+
+table {
+    font-size: 0.43em;
+    width: 75%;
+    border-radius: 20px;
+    border-collapse: collapse;
+    background-color: #b0b0ad;
+    overflow: hidden;
+}
+
+th,
+td {
+
+    border: 2px solid rgb(245, 158, 132);
+    align-items: center;
+    /* padding: 0px; */
+    /* gap: 20px; */
+}
+th {
+
+    background-color: #f9c255;
+    color: rgb(8, 8, 8);
+}
+
+td {
+    /* background-color: #b0b0ad; */
+    color: white;
+}
+
+.table-pic img {
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.sport-card {
+    padding: 30px 0px 0px 0px;
+    /* background: #c39393; */
+    display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-  }
-
-  .fcard {
-    width: 90%;
+}
+.card-img-top{
+    width: 50%;
     height: auto;
-  }
+}
+.card {
+    display: flex;
+    width: 92%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+ 
+}
 
-  .sport-card {
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.collage {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 25px;
+    gap: 10px;
+}
+.collage img {
+    /* width: 100%; */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+.areop-page {
+    /* background: #b06565; */
+    font-size: 0.8em;
+}
+
+.descri {
+  /* background: #000; */
+    flex: 1;
+  
+    margin: 0px;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-  }
 
-  .card {
-    width: 90%;
-  }
+}
 
-  .collage {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 10px;
-  }
+.descri p {
+    border-radius: 10px;
+    margin: 20px auto;
+    font-size: 1em;
+    line-height: 1.5;
+      color: black;
+      background: none;
 
-  .aero-pic {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 10px;
-  }
+}
+.aero-pic {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+     /* background: goldenrod; */
+}
+
+
+.aero-pic img {
+    width:150%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
 
   .form-con {
     padding: 20px;
@@ -761,3 +862,362 @@ footer {
     text-align: center;
   }
 }
+
+
+.form-con {
+
+    padding:0px 50px 0px 30px;
+    /* background-color: #dc6969; */
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    height: 20vh;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+
+button {
+    padding: 19px 60px;
+    background-color: #007BFF;
+    /* PNC blue */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+#map-section {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#map-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #d1d7db; /* PNC blue */
+}
+
+.map-container iframe {
+    border-radius: 10px;
+}
+
+
+
+
+/* ----------- Tablet (max-width: 1024px) ----------- */
+@media (max-width: 1024px) {
+ nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo img {
+    width: 35%;
+}
+.nav-link{
+    font-size: 1.5em;
+}
+
+.link-page ul {
+    flex-direction: row;
+    padding: 15px 0;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4em;
+    padding: 100px 0px 10px 50px;
+}
+
+.home p {
+    width: 90%;
+    padding-left: 50px;
+    font-size: 2em;
+}
+
+
+.h22{
+      flex: 1;
+    /* background: #6a5656; */
+    font-weight: bold;
+    font-size: 2.3em;
+    text-shadow: 1px 3px 6px rgb(12, 5, 102);
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 0px 0px;
+}
+.pp{
+     display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    flex: 2;
+    padding: 30px 0px 20px 0px;
+    /* background: #c51d1d; */
+}
+
+
+
+.values-section {
+    padding: 40px;
+
+  }
+
+.card1, .card2, .card3, .card4 {
+   display: flex;
+   flex-direction: row;
+    background-color: rgb(222, 241, 242);
+    border-radius: 10px;
+    /* padding: 10px; */
+    width: 94%;
+    font-size: 1.5em;
+}
+.card1 i, h6, .card2 i ,h6, .card3 i, h6, .card4 i ,h6{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+.food-card {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    /* background: #000; */
+}
+
+.fcard {
+   
+    width: 43%;
+    
+    height: auto;
+    /* background: red; */
+}
+.text-overlay{
+     color: black;
+     font-size: 1.5em;
+}
+
+
+.schedult{
+    /* background: #000; */
+    
+    width: 93%;
+}
+.schedult td{
+    color: black;
+}
+
+
+.sport-card {
+    padding: 30px 0px 50px 0px;
+    /* background: #c39393; */gap: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+}
+.card-img-top{
+    width: 40%;
+    
+    height: auto;
+}
+.card {
+    display: flex;
+    width: 92%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+ 
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+.card-text{
+    font-size: 1.5em;
+}
+
+
+
+.collage {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 40px;
+    gap: 10px;
+}
+.collage img {
+    /* width: 100%; */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.areop-page {
+    /* background: #b06565; */
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.descri {
+  /* background: #000; */
+    flex: 1;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.descri p {
+    border-radius: 10px;
+    margin: 20px auto;
+    font-size: 1.5em;
+    line-height: 1.5;
+      color: black;
+      background: none;
+
+}
+
+
+.aero-pic {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+     /* background: goldenrod; */
+}
+
+
+.aero-pic img {
+    width:150%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    
+}
+
+
+#contact-us{
+    /* background: #000; */
+    height: auto;
+    padding: 120px 0px;
+}
+.form-con {
+    
+    padding:20px 50px 0px 30px;
+    /* background-color: #dc6969; */
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-size: 1.7em;
+}
+
+input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    height: 20vh;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+
+button {
+    padding: 19px 60px;
+    background-color: #007BFF;
+    /* PNC blue */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+#map-section {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#map-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #d1d7db; /* PNC blue */
+}
+
+.map-container iframe {
+    border-radius: 10px;
+}
+
+.footer-container{
+    font-size: 1.5em;
+    flex-wrap: wrap;
+    /* background: #000; */
+}
+
+.footer-column{
+    padding: 40px;
+    /* background: green; */
+}
+.footer-column h4 {
+    font-size: 1.5em;
+}
+}
+
