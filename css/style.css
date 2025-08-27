@@ -623,32 +623,55 @@ footer {
 /* ----------- Mobile Phone (max-width: 600px) ----------- */
 @media (max-width: 600px) {
 
-  /* nav {
+/* nav {
     flex-direction: column;
     align-items: center;
-  } */
+} */
+.navbar{
+    /* background: #000; */
+    display: flex;
+    flex-direction: column;
 
+}
+.link-page{
+  /* background: yellow;  */
+  font-size: 0.6em;
+    
+
+} 
+.logo{
+    justify-content: center;
+    padding:  10px 0px 10px 130px;
+    /* background: green; */
+}
 .logo img {
     width: 50%;
+  
   }
 
 .link-page ul {
-    flex-direction: column;
-    gap: 10px;
+    /* display: flex;
+    flex-direction: column; */
+    /* gap: 10px; */
     padding: 10px 0;
     text-align: center;
+
   }
 
-/* h1 {
-    font-size: 2em;
+h1 {
+    font-size: 1.5em;
+   color: #0072BC;
     padding: 60px 0px 10px 20px;
-  } */
-
+}
+.homew p{ 
+    background: #000;
+}
 .home p {
-    width: 90%;
+    /* width: 90%; */
     padding-left: 20px;
-    font-size: 1em;
-  }
+    font-size: 0.1em;
+    
+}
 
 .top{
     /* background: #a37d7d; */
@@ -688,7 +711,7 @@ footer {
     background-color: rgb(222, 241, 242);
     border-radius: 10px;
     padding: 10px;
-    width: 84%;
+    width: 95%;
     font-size: 1.5em;
 }
 .card1 i, h6, .card2 i ,h6, .card3 i, h6, .card4 i ,h6{
@@ -708,7 +731,7 @@ footer {
     /* background: #816060; */
     display: flex;
     gap: 30px;
-    flex-direction: row;
+    flex-direction: column;
 
 }
 .text-overlay{
@@ -719,6 +742,7 @@ footer {
     color: #000;
 }
 .fcard {
+    
     /* height: 0vh; */
     width: 90%;
     height: auto;  
@@ -747,8 +771,7 @@ td {
 
     border: 2px solid rgb(245, 158, 132);
     align-items: center;
-    /* padding: 0px; */
-    /* gap: 20px; */
+   
 }
 th {
 
@@ -861,6 +884,13 @@ td {
     flex-direction: column;
     text-align: center;
   }
+#contact-us{
+    padding: 100px 0px 0px 0px;
+    /* background: #000; */
+}
+#contact-us .h22{
+    /* color: green; */
+    margin-top: 40px;
 }
 
 
@@ -874,12 +904,14 @@ td {
 .form-group {
     margin-bottom: 15px;
 }
-
+ label{
+    font-size: 0.7em;
+ }
 input {
     margin-top: 10px;
     width: 100%;
     padding: 10px;
-    font-size: 15px;
+    font-size: 10px;
     border-radius: 10px;
     border: 1px solid #ccc;
 }
@@ -913,19 +945,21 @@ button {
     margin-top: 50px;
 }
 
-#map-section h2 {
+.map-container .h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
     font-size: 24px;
     color: #d1d7db; /* PNC blue */
 }
-
+.map-section .h22{
+    margin-bottom: 20px;
+}
 .map-container iframe {
     border-radius: 10px;
 }
 
 
-
+}
 
 /* ----------- Tablet (max-width: 1024px) ----------- */
 @media (max-width: 1024px) {
